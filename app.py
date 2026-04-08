@@ -182,7 +182,7 @@ st.markdown("## Entrada de hoy")
 c1, c2 = st.columns([1, 1])
 
 with c1:
-    fecha = st.date_input("Fecha (DD/MM/AAAA)", value=date.today())
+    fecha = st.date_input("Fecha", value=date.today())
     fecha_lat = fmt_fecha_lat(fecha)
 
 with c2:
@@ -243,4 +243,4 @@ st.download_button(
     use_container_width=True,
 )
 
-st.caption("Tip: guarda este link en tu PDF del bump. No requiere login.")
+st.caption("Tip: guarda este link en tu PDF. No requiere login.")
